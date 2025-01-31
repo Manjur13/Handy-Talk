@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashScreen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="50dp"
+        android:src="@drawable/handytalklogo" />
+
+    <TextView
+        android:id="@+id/handy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="-60dp"
+        android:fontFamily="@font/b612"
+        android:text="Handy"
+        android:textColor="#121D31"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/talk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_toRightOf="@id/handy"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-60dp"
+        android:fontFamily="@font/b612"
+        android:text="Talk"
+        android:textColor="#E22328"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieloading"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_below="@id/handy"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+
+</RelativeLayout>

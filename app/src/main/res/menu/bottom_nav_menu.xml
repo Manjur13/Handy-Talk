@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/person"
+        android:title="Nauha"
+        android:icon="@drawable/signtotext" />
+    <item
+        android:id="@+id/home"
+        android:title="Majlish"
+        app:icon="@drawable/signtotext"
+   />
+    <item
+        android:id="@+id/Aamaal"
+        android:title="Aamaal"
+        android:icon="@drawable/signtotext" />
+</menu>

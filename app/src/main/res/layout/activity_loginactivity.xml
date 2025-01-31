@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".loginactivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/handytalklogo" />
+
+    <TextView
+
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="165dp"
+        android:text="Log In Now"
+        android:fontFamily="@font/b612"
+        android:textStyle="bold"
+        android:textColor="#E22328"
+        android:textSize="37dp" />
+
+    <RelativeLayout
+        android:id="@+id/loginrelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="60.7dp"
+        android:layout_marginRight="62dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginTextFieldEMAIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:hint="Email"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxStrokeColor="#E22328"
+            app:hintTextColor="#E22328"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            app:startIconTint="#E22328">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textCursorDrawable="@null" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginTextFieldPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="275dp"
+            android:hint="Password"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxStrokeColor="#E22328"
+            app:hintTextColor="#E22328"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:startIconTint="#E22328">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@null" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/logginbtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/loginrelative"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:clickable="true"
+        android:elevation="15dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="#E22328"
+        app:spinning_bar_color="@color/white"
+        app:spinning_bar_padding="6dp"/>
+
+
+    <TextView
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logginbtn"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="25dp"
+        android:text="FORGET PASSWORD ?"
+        android:textColor="#E22328"
+        android:textSize="11sp" />
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_reset"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="107dp"
+
+        android:layout_marginTop="15dp"
+
+        android:text="Don't have an account?"
+        android:textColor="#A2AAB8"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+
+        android:text="Sign up"
+        android:layout_toRightOf="@id/text"
+        android:layout_below="@id/button_reset"
+
+        android:textColor="#121D31"
+        android:textStyle="bold"
+        android:textSize="13sp" />
+    <LinearLayout
+        android:id="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:weightSum="12"
+        android:layout_below="@id/text">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="6"
+            android:background="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="OR"
+            android:textAlignment="center"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="6"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_facebook"/>
+
+        <ImageView
+            android:id="@+id/google_signin_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="signin"
+
+            android:src="@drawable/ic_google"/>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_twitter"/>
+
+
+
+    </LinearLayout>
+
+<!--    <ImageView-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="331dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="-30dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginRight="-10dp"-->
+<!--        android:src="@drawable/signone" />-->
+
+
+
+
+
+
+</RelativeLayout>

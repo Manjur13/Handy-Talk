@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".getstarted">
+
+    <ImageView
+        android:id="@+id/getstartedlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/getstarted"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/qoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getstartedlogo"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/capriola"
+        android:text="''S☝🏼GNS   ARE   T👌🏼   E✌🏼ES   WHERE"
+        android:textAlignment="center"
+        android:textColor="#121D31"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/qoute1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/qoute"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/capriola"
+        android:text="  W👌🏼R👍🏼S   ARE   T👌🏼   EARS''"
+        android:textAlignment="center"
+        android:textColor="#121D31"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@id/qoute"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="130dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:text="LOGIN WITH EMAIL"
+        app:backgroundTint="#E22328" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:text="LOGIN WITH PHONE"
+        app:backgroundTint="#E22328" />
+
+
+
+</RelativeLayout>

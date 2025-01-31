@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_upload"
+        android:title="upload"
+        android:icon="@drawable/signtotext"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/save"
+        android:title="save"
+        android:icon="@drawable/signtotext"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/signtotext"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+</menu>

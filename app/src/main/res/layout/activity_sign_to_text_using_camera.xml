@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C4C5"
+    tools:context=".signtotext">
+
+    <ImageView
+        android:id="@+id/texttospeechcamera"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/outputcv"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@id/flashlight"
+        android:src="@drawable/voice" />
+
+
+
+    <ImageView
+        android:id="@+id/flashlight"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/outputcv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="120dp"
+        android:src="@drawable/copy" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/inputcv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="@dimen/cardview_default_radius"
+        app:strokeColor="#707070"
+        app:strokeWidth="2dp">
+
+        <org.opencv.android.JavaCameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/cameroutputtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputcv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/capriola"
+        android:text="Implement Your Sign Language" />
+
+    <TextView
+        android:id="@+id/outputtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cameroutputtext"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/capriola"
+        android:text="Handies ready for talk :"
+        android:textColor="#BD0303"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/clrbtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cameroutputtext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/outputtv"
+        android:text="Clear"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/outputcv"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/outputtv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/white"
+
+        app:cardElevation="@dimen/cardview_default_radius"
+        app:strokeColor="#707070"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:id="@+id/signreading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Your Sign Traslation Output...."
+            android:textIsSelectable="true" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!-- -->
+
+<!--&lt;!&ndash;    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/button_layout"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_gravity="bottom|end"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_margin="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/debug_layout"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:visibility="invisible">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/capture_button"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/bluetooth" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/save_button"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/bluetooth" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/edge_button"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/bluetooth" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/debug_button"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/bluetooth" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/help_button"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/bluetooth" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/result_textview"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_gravity="top|center_horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textSize="20sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/prob_textview"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_gravity="bottom|center_horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:paddingBottom="230dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textSize="20sp" />&ndash;&gt;-->
+
+<!--</FrameLayout>-->

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.handytalk">
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.front" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- Request legacy Bluetooth permissions on older devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <!--
+ Needed only if your app looks for Bluetooth devices.
+         If your app doesn't use Bluetooth scan results to derive physical
+         location information, you can strongly assert that your app
+         doesn't derive physical location.
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <!--
+ Needed only if your app makes the device discoverable to Bluetooth
+         devices.
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <!--
+ Needed only if your app communicates with already-paired Bluetooth
+         devices.
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HandyTalk">
+        <activity
+            android:name=".Forgetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz"
+            android:exported="false" />
+        <activity
+            android:name=".sign_to_text_using_camera"
+            android:exported="false" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Theme.HandyTalk.NoActionBarAndStatusBar" />
+        <activity
+            android:name=".verifyotp"
+            android:exported="false" />
+        <activity
+            android:name=".otp_screen"
+            android:exported="false" />
+        <activity
+            android:name=".learn_sign"
+            android:exported="false" />
+        <activity
+            android:name=".contact_us"
+            android:exported="false" />
+        <activity
+            android:name=".learn"
+            android:exported="false" />
+        <activity
+            android:name=".signtotext"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard"
+            android:exported="true"
+            android:theme="@style/Theme.HandyTalk.NoActionBarAndStatusBar" />
+        <activity
+            android:name=".QuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".registrationactivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginactivity"
+            android:exported="false" />
+        <activity
+            android:name=".getstarted"
+            android:exported="false" />
+        <activity
+            android:name=".splashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ResultActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

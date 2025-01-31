@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/advent_pro_thin</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/archivo</item>
+        <item>@font/archivo_black</item>
+        <item>@font/artifika</item>
+        <item>@font/b612</item>
+        <item>@font/bungee</item>
+        <item>@font/cantarell</item>
+        <item>@font/capriola</item>
+    </array>
+</resources>

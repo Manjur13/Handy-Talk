@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C4C5"
+    tools:context=".signtotext">
+
+    <ImageView
+        android:id="@+id/texttospeech"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/connectToDevice"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@id/seachDevices"
+        android:src="@drawable/voice" />
+
+    <ImageView
+        android:id="@+id/seachDevices"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/connectToDevice"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@id/copytext"
+
+        android:src="@drawable/bluetooth" />
+
+    <ImageView
+        android:id="@+id/copytext"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/connectToDevice"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
+        android:src="@drawable/copy" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/inputcv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="@dimen/cardview_default_radius"
+        app:strokeColor="#707070"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:id="@+id/tvque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:src="@drawable/interpreter" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/sensetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputcv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/capriola"
+        android:text="Smart Gloves disconnected 🔴" />
+
+    <TextView
+        android:id="@+id/outputtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensetv"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/capriola"
+        android:text="Handies ready for talk :"
+        android:textColor="#BD0303"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/sensetv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/outputtv"
+        android:text="Clear"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/outputcv"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/outputtv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/white"
+
+        app:cardElevation="@dimen/cardview_default_radius"
+        app:strokeColor="#707070"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:id="@+id/btReadings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Your Sign Traslation Output...."
+            android:textIsSelectable="true" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/connectToDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputcv"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button"
+        android:text="Translate" />
+
+
+</RelativeLayout>

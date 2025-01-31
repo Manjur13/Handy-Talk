@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C4C5"
+    tools:context=".contact_us">
+
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="-130dp"
+        android:layout_marginTop="-16dp"
+        android:src="@drawable/ic_contact_us_text" />
+
+    <ImageView
+        android:id="@+id/design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-340dp"
+        android:src="@drawable/ic_contactus" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/contactusname" />
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-130dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/designcontact" />
+
+    <ImageView
+        android:id="@+id/call_manjur"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="374dp"
+        android:layout_marginRight="116dp"
+        android:src="@drawable/ic_baseline_call_manjur" />
+
+    <ImageView
+        android:id="@+id/sms_manjur"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="374dp"
+        android:layout_marginRight="91dp"
+        android:src="@drawable/ic_baseline_sms_24" />
+
+    <ImageView
+        android:id="@+id/email_manjur"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="374dp"
+        android:layout_marginRight="67dp"
+        android:src="@drawable/ic_baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/call_meet"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/call_manjur"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="116dp"
+        android:src="@drawable/ic_baseline_call_manjur" />
+
+    <ImageView
+        android:id="@+id/sms_meet"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/sms_manjur"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="91dp"
+        android:src="@drawable/ic_baseline_sms_24" />
+
+    <ImageView
+        android:id="@+id/email_meet"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/email_manjur"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="67dp"
+        android:src="@drawable/ic_baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/call_shoaib"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/call_meet"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="116dp"
+        android:src="@drawable/ic_baseline_call_manjur" />
+
+    <ImageView
+        android:id="@+id/sms_shoaib"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/call_meet"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="91dp"
+        android:src="@drawable/ic_baseline_sms_24" />
+
+    <ImageView
+        android:id="@+id/email_shoaib"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/call_meet"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="67dp"
+        android:src="@drawable/ic_baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/call_kunal"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/call_shoaib"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="116dp"
+        android:src="@drawable/ic_baseline_call_manjur" />
+
+    <ImageView
+        android:id="@+id/sms_kunal"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/call_shoaib"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="91dp"
+        android:src="@drawable/ic_baseline_sms_24" />
+
+    <ImageView
+        android:id="@+id/email_kunal"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/call_shoaib"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="67dp"
+        android:src="@drawable/ic_baseline_email_24" />
+
+
+</RelativeLayout>

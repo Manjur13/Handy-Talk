@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1B5B7"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.example.handytalk.ResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cpb_background_progressbar_color="#F44336"
+            app:cpb_background_progressbar_width="10dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progress_max="10"
+            app:cpb_progressbar_color="#8BC34A"
+            app:cpb_progressbar_width="15dp"
+            app:cpb_round_border="false" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="5/10"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="28dp"-->
+    <!--        android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--        android:text="Large Text"-->
+    <!--        android:id="@+id/tvres"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="70dp"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:background="#F44336"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="19dp" />-->
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottieresult"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:background="#01579B"
+        android:text="Restart"
+        android:textColor="#ffffff" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativelayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/result" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativelayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-120dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/congratulations" />
+
+
+</RelativeLayout>
